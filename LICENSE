@@ -1,0 +1,7 @@
+FaceX (the landmarks detector library) and FaceX-Train (the model training tool) have DIFFERENT license.
+
+The license of FaceX is MIT.
+
+The license of FaceX-Train is GPL.
+
+Please check the LICENSE file in their directory.
