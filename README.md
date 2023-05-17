@@ -6,13 +6,13 @@ Team 06 of Harvard CS205 class have optimized the training part of `faceX` i.e. 
 
 **Group Members:**
 
-_Zhecheng Yao 
+_Zhecheng Yao zhechengyao@g.harvard.edu_
 
-_Lucy Li 
+_Lucy Li cli@fas.harvard.edu_
 
-_Rebecca Qiu 
+_Rebecca Qiu zqiu1@fas.harvard.edu_
 
-_Yixian Gan 
+_Yixian Gan ygan@g.harvard.edu_
 
 ## Usage Guide
 

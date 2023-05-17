@@ -1,0 +1,21 @@
+CFLAGS = -std=c++11 -O3 -ggdb -I$(OPENCV_INCLUDE) -fopenmp
+LDFLAGS = -pg 
+objects = main_train.o fern_train.o regressor_train.o utils_train.o
+
+facex-train: $(objects)
+		mpic++ $(CFLAGS) $(LDFLAGS) -o facex-train $(objects) -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio
+
+main_train.o: main_train.cpp regressor_train.h fern_train.h utils_train.h
+		mpic++ $(CFLAGS) $(LDFLAGS) -c main_train.cpp -L$(OPENCV_LIB) -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio
+
+fern_train.o: fern_train.cpp fern_train.h utils_train.h
+		mpic++ $(CFLAGS) $(LDFLAGS) -c fern_train.cpp -L$(OPENCV_LIB) -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio
+
+regressor_train.o: regressor_train.cpp regressor_train.h fern_train.h utils_train.h
+		mpic++ $(CFLAGS) $(LDFLAGS) -c regressor_train.cpp -L$(OPENCV_LIB) -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio
+
+utils_train.o: utils_train.cpp utils_train.h
+		mpic++ $(CFLAGS) $(LDFLAGS) -c utils_train.cpp -L$(OPENCV_LIB) -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio
+
+clean:
+		-rm facex-train $(objects)

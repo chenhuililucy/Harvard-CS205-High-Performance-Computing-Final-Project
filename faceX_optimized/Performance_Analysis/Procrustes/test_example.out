@@ -1,0 +1,24 @@
+rm -f Procrustes
+g++ -std=c++17 -O3 -mavx -fopenmp -lpapi -march=native Procrustes.cpp -o Procrustes -lopencv_core -lopencv_imgproc -lopencv_highgui
+Data Size: 10000000 2dPoint
+Average execution time of Procrustes: 41.7 ms
+Average execution time of ProcrustesV: 25 ms
+Procrustes and ProcrustesV produce the same result
+
+Data Size: 20000000 2dPoint
+Average execution time of Procrustes: 82.4 ms
+Average execution time of ProcrustesV: 50.2 ms
+Procrustes and ProcrustesV produce the same result
+
+Data Size: 30000000 2dPoint
+Average execution time of Procrustes: 125 ms
+Average execution time of ProcrustesV: 76 ms
+Procrustes and ProcrustesV produce the same result
+
+Data Size: 40000000 2dPoint
+Average execution time of Procrustes: 166.2 ms
+Average execution time of ProcrustesV: 101.9 ms
+Procrustes and ProcrustesV produce the same result
+
+[roofline analysis](https://code.harvard.edu/CS205/team06/blob/main/faceX_optimized/Performance_Analysis/Procrustes/procrustes_roofline.png)
+[scaling analysis](https://code.harvard.edu/CS205/team06/blob/main/faceX_optimized/Performance_Analysis/Procrustes/procrustes_scaling.png)
