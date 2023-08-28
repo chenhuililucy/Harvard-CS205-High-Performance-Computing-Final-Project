@@ -1,5 +1,8 @@
 ## Brief Introduction
 
+For this project we chose to optimize [this microsoft research paper](Cao X, Wei Y, Wen F, et al. Face alignment by explicit shape regression[J]. International Journal of Computer Vision, 2014, 107(2): 177-190.](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/Face-Alignment-by-Explicit-Shape-Regression.pdf) with the original code base [here](https://github.com/delphifirst/FaceX)
+
+
 `faceX` is a C++ program that trains on labeled images and executes facial landmark recognition.
 
 Team 06 of Harvard CS205 class have optimized the training part of `faceX` i.e. `faceX-Train` as their final project in 2023 Spring. 
