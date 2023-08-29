@@ -2,6 +2,7 @@
 
 For this project we chose to optimize a microsoft research paper [Cao X, Wei Y, Wen F, et al. Face alignment by explicit shape regression[J]. International Journal of Computer Vision, 2014, 107(2): 177-190.](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/Face-Alignment-by-Explicit-Shape-Regression.pdf) with the original code base [here](https://github.com/delphifirst/FaceX)
 
+The final project report we wrote can be found [here](https://github.com/chenhuililucy/Harvard-CS205-High-Performance-Computing-Final-Project/blob/main/milestone/5/report.pdf)
 
 `faceX` is a C++ program that trains on labeled images and executes facial landmark recognition.
 
